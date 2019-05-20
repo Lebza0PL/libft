@@ -6,7 +6,7 @@
 /*   By: lselao <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/20 15:12:42 by lselao            #+#    #+#             */
-/*   Updated: 2019/05/20 15:14:36 by lselao           ###   ########.fr       */
+/*   Updated: 2019/05/20 15:16:50 by lselao           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,5 +19,5 @@ int		ft_strlen(char *str)
 	i = 0;
 	while (str[i] != '\0')
 	i++;
-	return (i);
+	return (i);// this returns i
 }
