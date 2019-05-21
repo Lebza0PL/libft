@@ -6,20 +6,18 @@
 /*   By: lselao <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/20 15:59:11 by lselao            #+#    #+#             */
-/*   Updated: 2019/05/20 17:46:23 by lselao           ###   ########.fr       */
+/*   Updated: 2019/05/21 12:56:45 by lselao           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "stdio.h"
+#include "libft.h"
 
-int		ft_strcmp(unsigned char *s1, unsigned char *s2)
+int		ft_strcmp(const char *s1, const char *s2)
 {
-	return (*s1++ - *s2++); 
-}
+	int i;
 
-int		main()
-{
-	
-	printf("%d", ft_strcmp("he", "hello"));
-	return (0);
+	i = 0;
+	while (s1[i] && s2[i] && s1[i] == s2[i])
+		i++;
+	return (s1[i] - s2[i]);
 }
