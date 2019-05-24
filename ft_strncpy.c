@@ -1,24 +1,26 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_tolower.c                                       :+:      :+:    :+:   */
+/*   ft_strncpy.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: lselao <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2019/05/21 15:05:40 by lselao            #+#    #+#             */
-/*   Updated: 2019/05/24 14:54:36 by lselao           ###   ########.fr       */
+/*   Created: 2019/05/23 16:37:42 by lselao            #+#    #+#             */
+/*   Updated: 2019/05/23 17:00:26 by lselao           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int		ft_tolower(int c)
+char	*ft_strncpy(char *dst, const char *src, size_t len)
 {
-	unsigned char t;
+	size_t i;
 
-	if (c >= 65 && 97 >= c)
-		t = c + 32;
-	else
-		return (c);
-	return (t);
+	i = 0;
+	while(i < len && src[i])
+	{
+		dst[i] = src[i];
+		i++;
+	}
+	return (dst);
 }

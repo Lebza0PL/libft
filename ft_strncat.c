@@ -1,24 +1,40 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_tolower.c                                       :+:      :+:    :+:   */
+/*   ft_strncat.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: lselao <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2019/05/21 15:05:40 by lselao            #+#    #+#             */
-/*   Updated: 2019/05/24 14:54:36 by lselao           ###   ########.fr       */
+/*   Created: 2019/05/23 17:19:08 by lselao            #+#    #+#             */
+/*   Updated: 2019/05/23 18:36:28 by lselao           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "stdio.h"
 
-int		ft_tolower(int c)
+char	*ft_strncat(char *s1, const char *s2, size_t n)
 {
-	unsigned char t;
+	int i;
+	int j;
 
-	if (c >= 65 && 97 >= c)
-		t = c + 32;
-	else
-		return (c);
-	return (t);
+	i = 0;
+	j = 0;
+	while (s1[i])
+		i++;
+	while (s2[j] && j < n)
+	{
+		s1[i] = s2[j];
+		i++;
+		j++;
+	}
+	return (0);
+}
+
+int		main()
+{
+	char s1[] = "hello";
+	char s2[] = "world";
+	
+	printf("%s", ft_strncat(s1, s2, 2));
+	return (0);
 }

@@ -1,24 +1,32 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_tolower.c                                       :+:      :+:    :+:   */
+/*   strcat.c                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: lselao <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2019/05/21 15:05:40 by lselao            #+#    #+#             */
-/*   Updated: 2019/05/24 14:54:36 by lselao           ###   ########.fr       */
+/*   Created: 2019/05/23 13:41:39 by lselao            #+#    #+#             */
+/*   Updated: 2019/05/23 17:19:57 by lselao           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int		ft_tolower(int c)
+char	*ft_strcat(char *s1, const char *s2)
 {
-	unsigned char t;
+	int i;
+	int j;
 
-	if (c >= 65 && 97 >= c)
-		t = c + 32;
-	else
-		return (c);
-	return (t);
+	i = 0;
+	j = 0;
+	while (s1[i])
+		i++;
+	while (s2[j])
+	{
+		s1[i] = s2[j];
+		i++;
+		j++;
+	}
+	s1[i] = '\0';
+	return (s1);
 }

@@ -6,7 +6,7 @@
 /*   By: lselao <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/22 18:00:26 by lselao            #+#    #+#             */
-/*   Updated: 2019/05/22 18:20:52 by lselao           ###   ########.fr       */
+/*   Updated: 2019/05/24 14:56:03 by lselao           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,13 +18,4 @@ int		ft_isalnum(int c)
 		return (1);
 	else
 		return (0);
-}
-
-int 	main()
-{
-	int i;
-
-	i = ft_isalnum('');
-	printf("%d", i);
-	return (0);
 }
