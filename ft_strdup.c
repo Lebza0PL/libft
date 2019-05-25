@@ -1,31 +1,22 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strncat.c                                       :+:      :+:    :+:   */
+/*   ft_strdup.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: lselao <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2019/05/23 17:19:08 by lselao            #+#    #+#             */
-/*   Updated: 2019/05/24 22:15:29 by lselao           ###   ########.fr       */
+/*   Created: 2019/05/24 22:56:56 by lselao            #+#    #+#             */
+/*   Updated: 2019/05/25 01:44:40 by lselao           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "stdio.h"
+#include "libft.h"
 
-char	*ft_strncat(char *s1, const char *s2, size_t n)
+char	*ft_strdup(char *src)
 {
-	int 	i;
-	size_t	j;
-
-	i = 0;
-	j = 0;
-	while (s1[i])
-		i++;
-	while (s2[j] && j < n)
-	{
-		s1[i] = s2[j];
-		i++;
-		j++;
-	}
-	return (s1);
+	
+	src = (char *)malloc(sizeof(strlen) *(i + 1));
+	if (p != NULL)
+		strcpy(prt, s);
+	return (ptr)
 }

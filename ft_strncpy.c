@@ -6,7 +6,7 @@
 /*   By: lselao <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/23 16:37:42 by lselao            #+#    #+#             */
-/*   Updated: 2019/05/23 17:00:26 by lselao           ###   ########.fr       */
+/*   Updated: 2019/05/24 21:09:54 by lselao           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,7 @@ char	*ft_strncpy(char *dst, const char *src, size_t len)
 	size_t i;
 
 	i = 0;
-	while(i < len && src[i])
+	while (src[i] && i < len)
 	{
 		dst[i] = src[i];
 		i++;

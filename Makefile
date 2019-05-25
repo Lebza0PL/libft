@@ -6,7 +6,7 @@
 #    By: lselao <marvin@42.fr>                      +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2019/05/23 13:12:42 by lselao            #+#    #+#              #
-#    Updated: 2019/05/24 14:32:27 by lselao           ###   ########.fr        #
+#    Updated: 2019/05/25 08:04:10 by lselao           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -26,7 +26,6 @@ $(NAME):
 	$(CC) -c $(FLAGS) $(SRC)
 	ar rc $(NAME) $(OBJECT)
 	ranlib $(NAME)
-	gcc -L -lft
 
 
 clean:
@@ -36,3 +35,10 @@ fclean: clean
 	rm -f $(NAME)
 
 re: fclean all
+
+run:
+	$(CC) $(FLAGS) $(NAME) main.c -o test
+	./test
+
+norm:
+	Norminette -R CheckForbiddenSourceHeader

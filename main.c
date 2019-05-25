@@ -1,31 +1,35 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strncat.c                                       :+:      :+:    :+:   */
+/*   main.c                                             :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: lselao <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2019/05/23 17:19:08 by lselao            #+#    #+#             */
-/*   Updated: 2019/05/24 22:15:29 by lselao           ###   ########.fr       */
+/*   Created: 2019/05/24 21:03:46 by lselao            #+#    #+#             */
+/*   Updated: 2019/05/25 01:46:53 by lselao           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "stdio.h"
+#include "libft.h"
 
-char	*ft_strncat(char *s1, const char *s2, size_t n)
+int		main(void)
 {
-	int 	i;
-	size_t	j;
+	/*ft_strncat
+	
+	char s1[] = "hello";
+	char s2[] = "world";
 
-	i = 0;
-	j = 0;
-	while (s1[i])
-		i++;
-	while (s2[j] && j < n)
-	{
-		s1[i] = s2[j];
-		i++;
-		j++;
-	}
-	return (s1);
+	printf("%s", ft_strncat(s1, s2, 3));i*/
+
+
+//	ft_strlen
+	
+	printf("%zu", ft_strlen("hello world!"));
+
+// ft_strdup
+
+//	char s1[35] = "hello";
+//	char *p;
+//	printf("duplicated string%s", p = strdup(s1));
+	return (0);
 }
