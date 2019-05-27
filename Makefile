@@ -6,7 +6,7 @@
 #    By: lselao <marvin@42.fr>                      +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2019/05/23 13:12:42 by lselao            #+#    #+#              #
-#    Updated: 2019/05/25 08:04:10 by lselao           ###   ########.fr        #
+#    Updated: 2019/05/27 14:45:35 by lselao           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -26,7 +26,6 @@ $(NAME):
 	$(CC) -c $(FLAGS) $(SRC)
 	ar rc $(NAME) $(OBJECT)
 	ranlib $(NAME)
-
 
 clean:
 	rm -f $(OBJECT)

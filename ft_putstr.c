@@ -6,7 +6,7 @@
 /*   By: lselao <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/20 15:53:04 by lselao            #+#    #+#             */
-/*   Updated: 2019/05/21 11:00:51 by lselao           ###   ########.fr       */
+/*   Updated: 2019/05/27 17:14:46 by lselao           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,6 +14,11 @@
 
 void	ft_putstr(char *str)
 {
-	while (*str)
+	if (str == NULL)
+		write(1, "(null)", 6);
+	else
+	{
+		while (*str)
 		write(1, str++, 1);
+	}
 }

@@ -6,7 +6,7 @@
 /*   By: lselao <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/24 21:03:46 by lselao            #+#    #+#             */
-/*   Updated: 2019/05/25 01:46:53 by lselao           ###   ########.fr       */
+/*   Updated: 2019/05/27 16:57:53 by lselao           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,12 +24,23 @@ int		main(void)
 
 //	ft_strlen
 	
-	printf("%zu", ft_strlen("hello world!"));
+//	printf("%zu", ft_strlen("hello world!"));
 
-// ft_strdup
-
+//	ft_strcpy
 //	char s1[35] = "hello";
-//	char *p;
-//	printf("duplicated string%s", p = strdup(s1));
+//	char s2[] = "leboo";
+
+//	printf("%s", ft_strcpy(s1, s2));
+//
+//	ft_strcat
+
+//	char s1[5] = "test";
+//	char s2[] = "testty";
+
+//	printf("%s", ft_strcat(s1, s2));
+//
+//	ft_putendl
+
+	putendl("good");
 	return (0);
 }

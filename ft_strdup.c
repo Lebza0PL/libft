@@ -6,7 +6,7 @@
 /*   By: lselao <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/24 22:56:56 by lselao            #+#    #+#             */
-/*   Updated: 2019/05/25 01:44:40 by lselao           ###   ########.fr       */
+/*   Updated: 2019/05/27 11:09:14 by lselao           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,9 +14,9 @@
 
 char	*ft_strdup(char *src)
 {
+	char	*dst;
 	
-	src = (char *)malloc(sizeof(strlen) *(i + 1));
-	if (p != NULL)
-		strcpy(prt, s);
-	return (ptr)
+	if ((dst = (char *)malloc(ft_strlen(src))))
+		return (ft_strcpy(dst, src));
+	return (NULL);
 }
