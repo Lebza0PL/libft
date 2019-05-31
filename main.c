@@ -6,7 +6,7 @@
 /*   By: lselao <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/24 21:03:46 by lselao            #+#    #+#             */
-/*   Updated: 2019/05/29 17:43:50 by lselao           ###   ########.fr       */
+/*   Updated: 2019/05/31 14:30:01 by lselao           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -43,19 +43,6 @@ int		main(void)
 //	ft_putendl("good");
 
 //	ft_memcpy
-//	char str1[] = "hello";
-//  char str2[];
- 
-//  printf("%s", ft_memcpy(str2, str1, 4));
-//
-//  ft_bzero
-
-//	char s1[20] = "hello";	
-//	ft_bzero(s1, 4);
-
-//	printf("%s", s1);
-//
-//	ft_memcpy
 	
 //	char s1[18] = "hello world again";
 //	char s2[35] = "lebza us coming to school again";
@@ -68,6 +55,13 @@ int		main(void)
 //
 //	ft_putnbr_fd
 //
-	ft_putnbr_fd(5, 1);
+//	ft_putnbr_fd(5, 1);
+//
+//	ft_memcmp
+
+//	char s1[5] = "hello";
+//	char s2[8] = "hello hi";
+
+//	printf("%d", ft_memcmp(s1, s2, 7));
 	return (0);
 }
