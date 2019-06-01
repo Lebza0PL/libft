@@ -1,29 +1,24 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_memchar.c                                       :+:      :+:    :+:   */
+/*   ft_memalloc.c                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: lselao <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2019/05/31 14:18:17 by lselao            #+#    #+#             */
-/*   Updated: 2019/06/01 16:40:08 by lselao           ###   ########.fr       */
+/*   Created: 2019/06/01 17:40:57 by lselao            #+#    #+#             */
+/*   Updated: 2019/06/01 17:44:15 by lselao           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	*ft_memchar(const void *s, int c, size_t n)
+void	*ft_memalloc(size_t size)
 {
-	size_t i;
-	unsigned char *s1;
-
-	i = 0;
-	s1 = (unsigned char *)s;
-	while (i < n)
-	{
-		if (s1[i] == (char)c)
-			return ((void *) &s1[i]);
-		i++;
-	}
-	return (NULL);
+	void *sr;
+	
+	sr = malloc(size);
+	if (sr == NULL)
+		return (NULL);
+	ft_bzero(sr, size);
+	return (sr);
 }

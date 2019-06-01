@@ -1,29 +1,28 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_memchar.c                                       :+:      :+:    :+:   */
+/*   ft_striteri.c                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: lselao <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2019/05/31 14:18:17 by lselao            #+#    #+#             */
-/*   Updated: 2019/06/01 16:40:08 by lselao           ###   ########.fr       */
+/*   Created: 2019/06/01 16:56:44 by lselao            #+#    #+#             */
+/*   Updated: 2019/06/01 17:06:34 by lselao           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	*ft_memchar(const void *s, int c, size_t n)
+void	ft_striteri(char *s, void (*f)(unsigned int, char *))
 {
-	size_t i;
-	unsigned char *s1;
+	unsigned int i;
 
 	i = 0;
-	s1 = (unsigned char *)s;
-	while (i < n)
+	if (s && f)
 	{
-		if (s1[i] == (char)c)
-			return ((void *) &s1[i]);
-		i++;
+		while (s[i] != '\0')
+		{
+			f(i, &s[i]);
+			i++;
+		}
 	}
-	return (NULL);
 }

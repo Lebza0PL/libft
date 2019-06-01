@@ -1,28 +1,35 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_memchar.c                                       :+:      :+:    :+:   */
+/*   ft_strstr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: lselao <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2019/05/31 14:18:17 by lselao            #+#    #+#             */
-/*   Updated: 2019/06/01 16:40:08 by lselao           ###   ########.fr       */
+/*   Created: 2019/06/01 13:35:07 by lselao            #+#    #+#             */
+/*   Updated: 2019/06/01 16:11:26 by lselao           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	*ft_memchar(const void *s, int c, size_t n)
+char 	*ft_strnstr(const char *s1, const char *s2, size_t n)
 {
 	size_t i;
-	unsigned char *s1;
+	size_t j;
 
 	i = 0;
-	s1 = (unsigned char *)s;
-	while (i < n)
+	j = 0;
+	if (s2[j] == '\0')
+		return ((char *)s1);
+	while (s1[i] && i < n)
 	{
-		if (s1[i] == (char)c)
-			return ((void *) &s1[i]);
+		while ((s1[i] == s2[j] || s2[j] == '\0') && i < n)
+		{
+			i++;
+			j++;
+			if (s2[j] == '\0')
+				return ((char *)&s1[i - j]);
+		}
 		i++;
 	}
 	return (NULL);
