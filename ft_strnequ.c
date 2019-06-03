@@ -1,22 +1,28 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_putendl_fd.c                                    :+:      :+:    :+:   */
+/*   ft_strnequ.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: lselao <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2019/05/27 17:19:28 by lselao            #+#    #+#             */
-/*   Updated: 2019/06/03 14:57:30 by lselao           ###   ########.fr       */
+/*   Created: 2019/06/03 15:05:25 by lselao            #+#    #+#             */
+/*   Updated: 2019/06/03 15:09:40 by lselao           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	ft_putendl_fd(const char *s, int fd)
+int		ft_strnequ(const char *s1, const char *s2, size_t n)
 {
-	if (!s)
-		return;
+	size_t i;
 
-	ft_putstr_fd(s, fd);
-	ft_putchar_fd('\n', fd);
+	i = 0;
+	if (!s1 && !s2)
+		return (1);
+	if (!s1 || !s2)
+		return (0);
+	if (ft_strncmp(s1, s2, n) == 0)
+		return (1);
+	else
+		return (0);
 }

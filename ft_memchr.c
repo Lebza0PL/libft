@@ -1,22 +1,29 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_putendl_fd.c                                    :+:      :+:    :+:   */
+/*   ft_memchar.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: lselao <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2019/05/27 17:19:28 by lselao            #+#    #+#             */
-/*   Updated: 2019/06/03 14:57:30 by lselao           ###   ########.fr       */
+/*   Created: 2019/05/31 14:18:17 by lselao            #+#    #+#             */
+/*   Updated: 2019/06/03 16:13:58 by lselao           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	ft_putendl_fd(const char *s, int fd)
+void	*ft_memchr(const void *s, int c, size_t n)
 {
-	if (!s)
-		return;
+	size_t i;
+	char *s1;
 
-	ft_putstr_fd(s, fd);
-	ft_putchar_fd('\n', fd);
+	i = 0;
+	s1 = (char *)s;
+	while (i < n)
+	{
+		if (s1[i] == (char)c)
+			return ((void *) &s1[i]);
+		i++;
+	}
+	return (NULL);
 }

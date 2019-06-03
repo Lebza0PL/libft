@@ -6,7 +6,7 @@
 /*   By: lselao <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/22 15:24:02 by lselao            #+#    #+#             */
-/*   Updated: 2019/06/01 17:34:04 by lselao           ###   ########.fr       */
+/*   Updated: 2019/06/03 15:11:22 by lselao           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -47,7 +47,7 @@ void	ft_strdel(char **as);
 void	ft_memdel(void **ap);
 void	ft_bzero(void *str, size_t n);
 void	*ft_memset(void *b, int c, size_t len);
-void	*ft_memchar(const void *s, int c, size_t n);
+void	*ft_memchr(const void *s, int c, size_t n);
 void	*ft_memcpy(void *dst, const void *src, size_t n);
 void	*ft_memccpy(void *dst, const void *src, int c, size_t n);
 void	*ft_memalloc(size_t size);
