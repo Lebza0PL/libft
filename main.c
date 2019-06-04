@@ -6,7 +6,7 @@
 /*   By: lselao <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/24 21:03:46 by lselao            #+#    #+#             */
-/*   Updated: 2019/06/01 16:42:12 by lselao           ###   ########.fr       */
+/*   Updated: 2019/06/04 17:47:21 by lselao           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -59,9 +59,21 @@ int		main(void)
 //
 //	ft_memcmp
 
-	char s1[5] = "hello";
-	char s2[8] = "hello hi";
+//	char s1[5] = "hello";
+//	char s2[8] = "hello hi";
 
-	printf("%d", ft_memcmp(s1, s2, 7));
+//	printf("%d", ft_memcmp(s1, s2, 7));
+//
+//	ft_strchr
+//
+//	char s1[] = "hello world";
+	  
+//	printf("%s", ft_strchr(s1, 'r'));
+//
+//	ft_atoi
+
+	char s1[] = "6";
+
+		printf("%d", ft_atoi(s1));
 	return (0);
 }
