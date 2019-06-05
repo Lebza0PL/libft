@@ -6,7 +6,7 @@
 /*   By: lselao <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/24 21:03:46 by lselao            #+#    #+#             */
-/*   Updated: 2019/06/04 17:47:21 by lselao           ###   ########.fr       */
+/*   Updated: 2019/06/05 18:03:48 by lselao           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -72,8 +72,18 @@ int		main(void)
 //
 //	ft_atoi
 
-	char s1[] = "6";
+//	char s1 = "6";
+//	printf("%d", ft_atoi(s1));
+//
+//	ft_memmove
+//
+//   char dest[] = "oldstring";
+//  const char src[]  = "newstring";
 
-		printf("%d", ft_atoi(s1));
+//   printf("Before memmove dest = %s, src = %s\n", dest, src);
+//   memmove(dest, src, 9);
+//   printf("After memmove dest = %s, src = %s\n", dest, src);
+
+//  
 	return (0);
 }

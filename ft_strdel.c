@@ -1,31 +1,23 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strncat.c                                       :+:      :+:    :+:   */
+/*   ft_strdel.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: lselao <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2019/05/23 17:19:08 by lselao            #+#    #+#             */
-/*   Updated: 2019/06/05 17:41:33 by lselao           ###   ########.fr       */
+/*   Created: 2019/06/05 13:54:05 by lselao            #+#    #+#             */
+/*   Updated: 2019/06/05 17:45:52 by lselao           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char	*ft_strncat(char *s1, const char *s2, size_t n)
+void 	ft_strdel(char **as)
 {
-	size_t 	i;
-	size_t	j;
-
-	i = 0;
-	j = 0;
-	while (s1[i])
-		i++;
-	while (s2[i] && j < n)
-	{
-		s1[i] = s2[j];
-		i++;
-		j++;
+	if (!as || !*as)
+	{	
+		return ;
 	}
-	return (s1);
+	free(*as);
+	*as = NULL;
 }

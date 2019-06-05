@@ -6,7 +6,7 @@
 /*   By: lselao <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/06/03 14:59:27 by lselao            #+#    #+#             */
-/*   Updated: 2019/06/03 15:03:44 by lselao           ###   ########.fr       */
+/*   Updated: 2019/06/05 12:04:45 by lselao           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,9 +14,6 @@
 
 int		ft_strequ(const char *s1, const char *s2)
 {
-	int i;
-
-	i = 0;
 	if (s1 == NULL || s2 == NULL)
 		return (0);
 	if (ft_strcmp(s1, s2) != 0)
