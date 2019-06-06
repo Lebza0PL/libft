@@ -6,7 +6,7 @@
 /*   By: lselao <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/28 16:46:21 by lselao            #+#    #+#             */
-/*   Updated: 2019/05/28 18:19:37 by lselao           ###   ########.fr       */
+/*   Updated: 2019/06/06 13:03:39 by lselao           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,5 +27,5 @@ void	*ft_memset(void *b, int c, size_t len)
 		l[i] = (unsigned char)c;
 		i++;
 	}
-	return (l);
+	return (b);
 }

@@ -1,32 +1,34 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strncat.c                                       :+:      :+:    :+:   */
+/*   ft_strmap.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: lselao <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2019/05/23 17:19:08 by lselao            #+#    #+#             */
-/*   Updated: 2019/06/06 15:09:40 by lselao           ###   ########.fr       */
+/*   Created: 2019/06/06 14:45:20 by lselao            #+#    #+#             */
+/*   Updated: 2019/06/06 17:29:52 by lselao           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char	*ft_strncat(char *s1, const char *s2, size_t n)
+char	*ft_strmap(const char *s, char(*f)(char))
 {
+	char	*L;
 	size_t	i;
-	size_t	j;
+	size_t	len;
 
 	i = 0;
-	j = 0;
-	while (s1[i])
-		i++;
-	while (s2[i] && j < n)
+	if (!s)
+		return (NULL);
+	len = ft_strlen(s);
+	if (!(L = (char *)malloc(len + 1)))
+		return (NULL);
+	while (len > i)
 	{
-		s1[i] = s2[j];
+		L[i] = f(s[i]);
 		i++;
-		j++;
 	}
-	s1[i] = '\0';
-	return (s1);
+	L[i] = '\0';
+	return (L);
 }

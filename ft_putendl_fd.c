@@ -6,7 +6,7 @@
 /*   By: lselao <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/27 17:19:28 by lselao            #+#    #+#             */
-/*   Updated: 2019/06/03 14:57:30 by lselao           ###   ########.fr       */
+/*   Updated: 2019/06/06 15:32:54 by lselao           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,8 +15,7 @@
 void	ft_putendl_fd(const char *s, int fd)
 {
 	if (!s)
-		return;
-
+		return ;
 	ft_putstr_fd(s, fd);
 	ft_putchar_fd('\n', fd);
 }

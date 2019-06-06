@@ -6,18 +6,18 @@
 /*   By: lselao <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/28 14:32:36 by lselao            #+#    #+#             */
-/*   Updated: 2019/05/29 11:53:08 by lselao           ###   ########.fr       */
+/*   Updated: 2019/06/06 15:37:53 by lselao           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void    *ft_memcpy(void *dst, const void *src, size_t n)
+void	*ft_memcpy(void *dst, const void *src, size_t n)
 {
-	size_t i;
-	char *s1;
-	char *s2;
-	
+	size_t	i;
+	char	*s1;
+	char	*s2;
+
 	s2 = (char *)src;
 	s1 = (char *)dst;
 	i = 0;

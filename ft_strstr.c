@@ -6,13 +6,13 @@
 /*   By: lselao <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/06/01 16:11:34 by lselao            #+#    #+#             */
-/*   Updated: 2019/06/03 11:25:11 by lselao           ###   ########.fr       */
+/*   Updated: 2019/06/06 15:35:43 by lselao           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char 	*ft_strstr(const char *s1, const char *s2)
+char	*ft_strstr(const char *s1, const char *s2)
 {
 	int i;
 	int j;

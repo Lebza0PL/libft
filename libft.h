@@ -6,7 +6,7 @@
 /*   By: lselao <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/22 15:24:02 by lselao            #+#    #+#             */
-/*   Updated: 2019/06/05 18:03:50 by lselao           ###   ########.fr       */
+/*   Updated: 2019/06/06 17:29:46 by lselao           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -53,23 +53,23 @@ void	*ft_memccpy(void *dst, const void *src, int c, size_t n);
 void	*ft_memalloc(size_t size);
 void	*ft_memmove(void *dst, const void *src, size_t len);
 char	*ft_strcpy(char *dst, const char *src);
-char 	*ft_strncpy(char *dst, const char *src, size_t len);
+char	*ft_strncpy(char *dst, const char *src, size_t len);
 char	*ft_strchr(const char *s, int c);
-char 	*ft_strrchr(const char *s, int c);
-char 	*ft_strnew(size_t size);
+char	*ft_strrchr(const char *s, int c);
+char	*ft_strnew(size_t size);
 char	*ft_itoa(int nbr);
-char 	*ft_strmap(const char *s, char (*f)(char));
+char	*ft_strmap(const char *s, char (*f)(char));
 char	*ft_strmapi(char const *s, char (*f)(unsigned int, char));
 char	*ft_strdup(char *src);
 char	*ft_strcat(char *s1, const char *s2);
 char	*ft_strncat(char *s1, const char *s2, size_t n);
-char 	*ft_strstr(const char *s1, const char *s2);
+char	*ft_strstr(const char *s1, const char *s2);
 char	*ft_strnstr(const char *s1, const char *s2, size_t len);
 char	*ft_strsub(const char *s, unsigned int start, size_t len);
 char	*ft_strjoin(const char *s1, const char *s2);
 char	*ft_strtrim(const char *s);
 char	**ft_strsplit(const char *s, char c);
-size_t	ft_strlen(char *str);
+size_t	ft_strlen(const char *str);
 size_t	ft_strlcat(char *dst, const char *src, size_t dstsize);
 
 #endif
