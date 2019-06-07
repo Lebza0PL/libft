@@ -6,7 +6,7 @@
 /*   By: lselao <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/24 21:03:46 by lselao            #+#    #+#             */
-/*   Updated: 2019/06/05 18:03:48 by lselao           ###   ########.fr       */
+/*   Updated: 2019/06/07 13:30:50 by lselao           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -77,12 +77,12 @@ int		main(void)
 //
 //	ft_memmove
 //
-//   char dest[] = "oldstring";
+//  char dest[] = "oldstring";
 //  const char src[]  = "newstring";
 
-//   printf("Before memmove dest = %s, src = %s\n", dest, src);
-//   memmove(dest, src, 9);
-//   printf("After memmove dest = %s, src = %s\n", dest, src);
+//  printf("Before memmove dest = %s, src = %s\n", dest, src);
+//  memmove(dest, src, 9);
+//  printf("After memmove dest = %s, src = %s\n", dest, src);
 
 //  
 	return (0);
