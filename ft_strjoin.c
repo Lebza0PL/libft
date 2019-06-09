@@ -1,33 +1,41 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_memccpy.c                                       :+:      :+:    :+:   */
+/*   ft_strjoin.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: lselao <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2019/06/07 16:42:14 by lselao            #+#    #+#             */
-/*   Updated: 2019/06/09 18:25:28 by lselao           ###   ########.fr       */
+/*   Created: 2019/06/09 17:51:08 by lselao            #+#    #+#             */
+/*   Updated: 2019/06/09 17:59:55 by lselao           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	*ft_memccpy(void *dst, const void *src, int c, size_t n)
+char	*ft_strjoin(const char *s1, const char *s2)
 {
-	char	*dst1;
-	char	*src2;
-	size_t	i;
+	size_t	x;
+	size_t	y;
+	size_t	len;
+	char	*str;
 
-	i = 0;
-	dst1 = (char *)dst;
-	src2 = (char *)src;
-	while (i < n)
+	x = 0;
+	y = 0;
+	if (!s1 || !s2)
+		return (0);
+	len = ft_strlen(s1) + ft_strlen(s2) + 1;
+	str = (char *)malloc(sizeof(char) * len);
+	if (!str)
+		return (0);
+	while (s1[x] != '\0')
 	{
-		dst1[i] = src2[i];
-		if ((unsigned char)src2[i] == (unsigned char)c)
-		{
-			return ((char *)dst + i + 1);
-			i++;
-		}
+		str[x] = s1[x];
+		x++;
 	}
+	while (s2[y] != '\0')
+	{
+		str[x++] = s2[y++];
+	}
+	str[x] = '\0';
+	return (str);
 }
