@@ -6,7 +6,7 @@
 /*   By: lselao <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/22 15:24:02 by lselao            #+#    #+#             */
-/*   Updated: 2019/06/07 13:30:54 by lselao           ###   ########.fr       */
+/*   Updated: 2019/06/12 18:28:28 by lselao           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -60,7 +60,7 @@ char	*ft_strnew(size_t size);
 char	*ft_itoa(int nbr);
 char	*ft_strmap(const char *s, char (*f)(char));
 char	*ft_strmapi(char const *s, char (*f)(unsigned int, char));
-char	*ft_strdup(char *src);
+char	*ft_strdup(const char *src);
 char	*ft_strcat(char *s1, const char *s2);
 char	*ft_strncat(char *s1, const char *s2, size_t n);
 char	*ft_strstr(const char *s1, const char *s2);

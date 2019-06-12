@@ -6,7 +6,7 @@
 /*   By: lselao <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/24 21:03:46 by lselao            #+#    #+#             */
-/*   Updated: 2019/06/07 13:30:50 by lselao           ###   ########.fr       */
+/*   Updated: 2019/06/12 14:44:50 by lselao           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,12 +14,12 @@
 
 int		main(void)
 {
-	/*ft_strncat
+//	ft_strncat
 	
-	char s1[] = "hello";
-	char s2[] = "world";
+//	char s1[20] = "hello";
+//	char s2[20] = "world";
 
-	printf("%s", ft_strncat(s1, s2, 3));i*/
+//	printf("%s", ft_strncat(s1, s2, 3));
 
 //	ft_strlen
 	
@@ -33,8 +33,8 @@ int		main(void)
 //
 //	ft_strcat
 
-//	char s1[5] = "test";
-//	char s2[] = "testty";
+//	char s1[6] = "hello";
+//	char s2[] = "world";
 
 //	printf("%s", ft_strcat(s1, s2));
 //
@@ -47,7 +47,7 @@ int		main(void)
 //	char s1[18] = "hello world again";
 //	char s2[35] = "lebza us coming to school again";
 
-//	printf("%s", ft_memcpy(s1, s2, 32));
+//     ft_putstr(ft_memcpy(NULL, s2, 32));
 //
 //	ft_putnbr
 	
@@ -84,6 +84,20 @@ int		main(void)
 //  memmove(dest, src, 9);
 //  printf("After memmove dest = %s, src = %s\n", dest, src);
 
-//  
+//	ft_memset
+//	char s1[8] = "leboha";
+//	char c = '0';
+
+//	ft_putstr(ft_memset(s1, c, 2));
+//
+//	ft_bzero
+//	
+//	char s1[11] = "hello world";
+//	int i;
+
+//	i = 5;
+//	ft_bzero(s1, 6); 
+//	printf("%s", s1);
+//	ft_putstr(s1 + i);
 	return (0);
 }
