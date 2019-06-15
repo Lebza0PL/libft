@@ -6,7 +6,7 @@
 /*   By: lselao <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/23 17:19:08 by lselao            #+#    #+#             */
-/*   Updated: 2019/06/12 14:25:43 by lselao           ###   ########.fr       */
+/*   Updated: 2019/06/15 03:41:12 by lselao           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,7 @@ char	*ft_strncat(char *s1, const char *s2, size_t n)
 	j = 0;
 	while (s1[i])
 		i++;
-	while (s2[j] && (size_t)j < n)
+	while (s2[j] && j < n)
 	{
 		s1[i] = s2[j];
 		i++;

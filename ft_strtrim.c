@@ -1,37 +1,31 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_atoi.c                                          :+:      :+:    :+:   */
+/*   ft_strtrim.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: lselao <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2019/06/04 15:37:11 by lselao            #+#    #+#             */
-/*   Updated: 2019/06/15 06:02:58 by lselao           ###   ########.fr       */
+/*   Created: 2019/06/14 10:38:21 by lselao            #+#    #+#             */
+/*   Updated: 2019/06/15 03:58:13 by lselao           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	ft_atoi(const char *str)
+char	*ft_strtrim(const char *s)
 {
-	int	result;
-	int	sign;
-	int i;
+	size_t	i;
+	size_t	n;
 
+	if (!s)
+		return (NULL);
 	i = 0;
-	sign = 1;
-	result = 0;
-	while (str[i] && (str[i] == ' ' || str[i] == '\n' || str[i] == '\t' ||
-			str[i] == '\v' || str[i] == '\f' || str[i] == '\r'))
+	while ((s[i] == ' ' || s[i] == '\n' || s[i] == '\t'))
 		i++;
-	if (str[i] == '-')
-		sign = -1;
-	if (str[i] == '-' || *str == '+')
-		i++;
-	while (str[i] && str[i] >= '0' && str[i] <= '9')
-	{
-		result = result * 10 + (str[i] - 48);
-		i++;
-	}
-	return (result * sign);
+	if (s[i] == '\0')
+		return (ft_strdup(s + i));
+	n = ft_strlen(s) - 1;
+	while ((s[n] == ' ' || s[n] == '\t' || s[n] == '\n') && n > 0)
+		n--;
+	return (ft_strsub(s, i, n - i + 1));
 }

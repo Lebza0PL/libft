@@ -6,7 +6,7 @@
 /*   By: lselao <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/24 21:03:46 by lselao            #+#    #+#             */
-/*   Updated: 2019/06/12 14:44:50 by lselao           ###   ########.fr       */
+/*   Updated: 2019/06/15 03:45:45 by lselao           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,15 +14,17 @@
 
 int		main(void)
 {
-//	ft_strncat
+//	ft_putchar_fd
 	
+//	ft_putchar_fd('\a', 1);
+//	ft_strncat
+
 //	char s1[20] = "hello";
 //	char s2[20] = "world";
 
-//	printf("%s", ft_strncat(s1, s2, 3));
+//	printf("%s", ft_strncat(s1, s2, 5));
 
 //	ft_strlen
-	
 //	printf("%zu", ft_strlen("hello world!"));
 
 //	ft_strcpy
@@ -47,7 +49,7 @@ int		main(void)
 //	char s1[18] = "hello world again";
 //	char s2[35] = "lebza us coming to school again";
 
-//     ft_putstr(ft_memcpy(NULL, s2, 32));
+//  ft_putstr(ft_memcpy(NULL, s2, 32));
 //
 //	ft_putnbr
 	
@@ -99,5 +101,15 @@ int		main(void)
 //	ft_bzero(s1, 6); 
 //	printf("%s", s1);
 //	ft_putstr(s1 + i);
+//
+//	ft_strnequ
+
+//	char s1[6] = "hello";
+//	char s2[7] = "hello1";
+//	int i;
+
+//	i = 3;
+//	printf("%d", ft_strequ(s1, s2, i));
+//	
 	return (0);
 }

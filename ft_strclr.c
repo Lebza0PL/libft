@@ -6,7 +6,7 @@
 /*   By: lselao <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/06/05 12:54:12 by lselao            #+#    #+#             */
-/*   Updated: 2019/06/13 17:29:56 by lselao           ###   ########.fr       */
+/*   Updated: 2019/06/14 22:31:13 by lselao           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,6 @@
 
 void	ft_strclr(char *s)
 {
-//	size_t len;
 	size_t i;
 
 	i = 0;
@@ -22,7 +21,6 @@ void	ft_strclr(char *s)
 	{
 		return ;
 	}
-//	len = ft_strlen(s);
 	while (s[i] != '\0')
 	{
 		s[i] = '\0';
