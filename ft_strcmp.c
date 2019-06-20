@@ -6,7 +6,7 @@
 /*   By: lselao <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/20 15:59:11 by lselao            #+#    #+#             */
-/*   Updated: 2019/06/09 18:08:25 by lselao           ###   ########.fr       */
+/*   Updated: 2019/06/20 16:14:13 by lselao           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 int		ft_strcmp(const char *s1, const char *s2)
 {
-	int	i;
+	int				i;
 	unsigned char	*st1;
 	unsigned char	*st2;
 
