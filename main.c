@@ -6,7 +6,7 @@
 /*   By: lselao <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/24 21:03:46 by lselao            #+#    #+#             */
-/*   Updated: 2019/06/15 03:45:45 by lselao           ###   ########.fr       */
+/*   Updated: 2019/06/23 18:15:45 by lselao           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,9 +14,35 @@
 
 int		main(void)
 {
-//	ft_putchar_fd
-	
-//	ft_putchar_fd('\a', 1);
+//	ft_strchr
+
+//	char s1[] = "Lebzaa";
+//	char *s2 = 'u';
+
+//	ft_putendl(ft_strchr(s1, s2));
+//	ft_memccpy
+//	char s1[] = " ";
+//	char s2[] = "lebogang";
+//	int i = 6;
+//	char chr  = 'n';
+//	char *temp;
+
+//	temp = ft_memccpy(s1, s2, chr, i);
+//	ft_putendl(s1);
+//	ft_strsplit
+//	char	str[] = "Code is life";
+//	char	s = ' ';
+//	char	**tab;
+//	int		i;
+
+//	i = 0;
+//	tab = ft_strsplit(str, s);
+
+//	while (tab[i])
+//	{
+//		ft_putendl(tab[i++]);
+//	}
+//
 //	ft_strncat
 
 //	char s1[20] = "hello";
@@ -46,10 +72,10 @@ int		main(void)
 
 //	ft_memcpy
 	
-//	char s1[18] = "hello world again";
-//	char s2[35] = "lebza us coming to school again";
+//	char s1[40] = "hello world again";
+//	char s2[37] = "lebza us coming to school again";
 
-//  ft_putstr(ft_memcpy(NULL, s2, 32));
+//	ft_putstr(ft_memcpy(s1, s2, 32));
 //
 //	ft_putnbr
 	
@@ -73,9 +99,9 @@ int		main(void)
 //	printf("%s", ft_strchr(s1, 'r'));
 //
 //	ft_atoi
+//	char s1[6] = "54982";
 
-//	char s1 = "6";
-//	printf("%d", ft_atoi(s1));
+//	ft_putnbr(ft_atoi(s1));
 //
 //	ft_memmove
 //
@@ -111,5 +137,12 @@ int		main(void)
 //	i = 3;
 //	printf("%d", ft_strequ(s1, s2, i));
 //	
+//	ft_strmap
+//
+//  ft_strsub
+	
+//	char s1[] = "Lebogang";
+
+//	ft_putstr(ft_strsub(s1, 4, 2));
 	return (0);
 }

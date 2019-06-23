@@ -6,7 +6,7 @@
 /*   By: lselao <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/20 15:59:11 by lselao            #+#    #+#             */
-/*   Updated: 2019/06/20 16:14:13 by lselao           ###   ########.fr       */
+/*   Updated: 2019/06/22 15:00:11 by lselao           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,5 +25,10 @@ int		ft_strcmp(const char *s1, const char *s2)
 	{
 		i++;
 	}
-	return (st1[i] - st2[i]);
+	if ((unsigned char)st1[i] - (unsigned char)st2[i] < 0)
+		return (-1);
+	else if ((unsigned char)st1[i] - (unsigned char)st2[i] > 0)
+		return (1);
+	else
+		return (0);
 }
