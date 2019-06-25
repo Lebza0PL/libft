@@ -6,13 +6,13 @@
 /*   By: lselao <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/06/03 14:59:27 by lselao            #+#    #+#             */
-/*   Updated: 2019/06/14 13:55:39 by lselao           ###   ########.fr       */
+/*   Updated: 2019/06/25 08:52:37 by lselao           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int		ft_strequ(const char *s1, const char *s2)
+int		ft_strequ(char const *s1, char const *s2)
 {
 	if (s1 == NULL || s2 == NULL)
 		return (0);

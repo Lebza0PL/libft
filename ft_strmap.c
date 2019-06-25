@@ -6,13 +6,13 @@
 /*   By: lselao <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/06/06 14:45:20 by lselao            #+#    #+#             */
-/*   Updated: 2019/06/22 14:24:11 by lselao           ###   ########.fr       */
+/*   Updated: 2019/06/25 08:55:04 by lselao           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char	*ft_strmap(const char *s, char (*f)(char))
+char	*ft_strmap(char const *s, char (*f)(char))
 {
 	char	*l;
 	size_t	i;

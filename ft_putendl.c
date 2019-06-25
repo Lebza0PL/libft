@@ -6,16 +6,16 @@
 /*   By: lselao <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/27 16:37:48 by lselao            #+#    #+#             */
-/*   Updated: 2019/06/25 08:08:39 by lselao           ###   ########.fr       */
+/*   Updated: 2019/06/25 08:31:17 by lselao           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	ft_putendl(char *str)
+void	ft_putendl(char const *s)
 {
-	if (!str)
+	if (!s)
 		return ;
-	ft_putstr(str);
+	ft_putstr(s);
 	ft_putchar('\n');
 }

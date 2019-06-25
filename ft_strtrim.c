@@ -6,13 +6,13 @@
 /*   By: lselao <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/06/14 10:38:21 by lselao            #+#    #+#             */
-/*   Updated: 2019/06/15 03:58:13 by lselao           ###   ########.fr       */
+/*   Updated: 2019/06/25 08:34:40 by lselao           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char	*ft_strtrim(const char *s)
+char	*ft_strtrim(char const *s)
 {
 	size_t	i;
 	size_t	n;

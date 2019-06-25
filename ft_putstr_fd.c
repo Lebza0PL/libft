@@ -6,19 +6,19 @@
 /*   By: lselao <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/27 17:23:53 by lselao            #+#    #+#             */
-/*   Updated: 2019/06/05 15:08:29 by lselao           ###   ########.fr       */
+/*   Updated: 2019/06/25 08:27:47 by lselao           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	ft_putstr_fd(const char *str, int fd)
+void	ft_putstr_fd(const char *s, int fd)
 {
-	if (str == NULL)
+	if (s == NULL)
 		write(1, "(null)", 6);
 	else
 	{
-		while (*str)
-			write(fd, str++, 1);
+		while (*s)
+			write(fd, s++, 1);
 	}
 }
