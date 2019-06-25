@@ -6,7 +6,7 @@
 /*   By: lselao <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/24 21:03:46 by lselao            #+#    #+#             */
-/*   Updated: 2019/06/23 18:15:45 by lselao           ###   ########.fr       */
+/*   Updated: 2019/06/24 17:13:14 by lselao           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,10 +16,7 @@ int		main(void)
 {
 //	ft_strchr
 
-//	char s1[] = "Lebzaa";
-//	char *s2 = 'u';
-
-//	ft_putendl(ft_strchr(s1, s2));
+	ft_putstr("NULL");
 //	ft_memccpy
 //	char s1[] = " ";
 //	char s2[] = "lebogang";
